@@ -1,6 +1,6 @@
 import React from "react";
 import { ICON_HELPER } from "../helper/iconHelper";
-import { IMAHE_HELPER } from "../helper/imageHelper";
+import { Image_Helper } from "../helper/imageHelper";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -64,7 +64,7 @@ const Footer = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-4 py-6 ">
           <div className="md:flex-col flex space-y-5">
-            <img src={IMAHE_HELPER.FOOTER_LOGO} alt="Logo" className="w-[200px]  h-20 mb-3 bg-white" />
+            <img src={Image_Helper.FOOTER_LOGO} alt="Logo" className="w-[200px]  h-20 mb-3 bg-white" />
             <p className="text-white text-sm w-60 font-semibold md:block hidden">At erat nisl sit a id sit tincidunt. Egestas lectus habitant integer luctus onto ipsum elementum quis sed gravida.</p>
             <div className="hidden md:flex gap-3 mt-3">
               <ICON_HELPER.FACEBOOK_ICON className="w-5 h-5 text-white hover:text-[#425DAC] cursor-pointer" />
