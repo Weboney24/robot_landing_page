@@ -1,3 +1,4 @@
+import footer_image from "../assets/footor_logo.png";
 import navlogo from "../assets/logo/rorbotic_logo_page-0001-removebg-preview (1).png";
 import robo from "../assets/hero/banner-robot-01.png";
 import robo2 from "../assets/hero/banner-robot-02.png";
@@ -10,6 +11,8 @@ import minibanner4 from "../assets/hero/as-03.png";
 
 export const Image_Helper = {
   navlogo: navlogo,
+  FOOTER_LOGO: footer_image,
+
   robo: robo,
   robo2: robo2,
   background: background,
