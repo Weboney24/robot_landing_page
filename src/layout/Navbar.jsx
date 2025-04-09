@@ -9,7 +9,6 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
-  console.log;
   return (
     <nav className="shadow-md py-4 w-full h-auto bg-[#425DAC] flex flex-row items-center justify-between px-[8vw] sticky top-0 z-30">
       <div>
