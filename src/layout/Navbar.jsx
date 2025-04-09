@@ -5,21 +5,16 @@ import { Image_Helper } from "../helper/imageHelper";
 import { ICON_HELPER } from "../helper/iconHelper";
 
 const Navbar = () => {
-
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
-  console.log
+  console.log;
   return (
     <nav className="shadow-md py-4 w-full h-auto bg-[#425DAC] flex flex-row items-center justify-between px-[8vw] sticky top-0 z-30">
       <div>
         <Link to={"/"}>
-          <img
-            src={Image_Helper.navlogo}
-            alt="Logo"
-            className="w-[100px] h-auto bg-white"
-          />
+          <img src={Image_Helper.navlogo} alt="Logo" className="w-[150px] h-[50px] bg-white" />
         </Link>
       </div>
 
@@ -29,14 +24,9 @@ const Navbar = () => {
             const isActive = location.pathname === item.path;
             return (
               <li key={item.id} className="text-white font-semibold text-lg">
-                <Link
-                  to={item.path}
-                  className={`${
-                    isActive ? "text-[#54B685]" : "hover:text-[#54B685]"
-                  } transition-all duration-300`}
-                >
+                <a href={item.path} className={`${isActive ? "text-[#54B685]" : "hover:text-[#54B685]"} transition-all duration-300`}>
                   {item.name}
-                </Link>
+                </a>
               </li>
             );
           })}
@@ -44,20 +34,18 @@ const Navbar = () => {
       </div>
 
       <div className="hidden lg:block">
-        <button className="bg-[#54B685] text-white font-semibold rounded py-2 px-4">
-          Get Started!
-        </button>
+        <button className="bg-[#54B685] text-white font-semibold rounded py-2 px-4">Get Started!</button>
       </div>
 
       <div className="lg:hidden flex items-center">
         <button onClick={toggleMobileMenu} className="text-white">
           {isMobileMenuOpen ? (
             <div>
-              <ICON_HELPER.MENU_CLOSE_ICON className="size-[35px]"/>
+              <ICON_HELPER.MENU_CLOSE_ICON className="size-[35px]" />
             </div>
           ) : (
             <div>
-              <ICON_HELPER.MENU_ICON className="size-[35px]"/>
+              <ICON_HELPER.MENU_ICON className="size-[35px]" />
             </div>
           )}
         </button>
@@ -70,21 +58,14 @@ const Navbar = () => {
               const isActive = location.pathname === item.path;
               return (
                 <li key={item.id} className="text-white font-semibold text-lg">
-                  <Link
-                    to={item.path}
-                    className={`${
-                      isActive ? "text-[#54B685]" : "hover:text-[#54B685]"
-                    } transition-all duration-300`}
-                  >
+                  <a href={item.path} className={`${isActive ? "text-[#54B685]" : "hover:text-[#54B685]"} transition-all duration-300`}>
                     {item.name}
-                  </Link>
+                  </a>
                 </li>
               );
             })}
           </ul>
-          <button className="bg-[#54B685] text-white font-semibold rounded py-2 px-4 w-full mt-4">
-            Get Started!
-          </button>
+          <button className="bg-[#54B685] text-white font-semibold rounded py-2 px-4 w-full mt-4">Get Started!</button>
         </div>
       )}
     </nav>
