@@ -7,26 +7,27 @@ export const NavMenu = [
   {
     id: 2,
     name: "About",
-    path: "/about",
+    path: "#about",
   },
+
   {
     id: 3,
-    name: "Service",
-    path: "/service",
+    name: "Courses",
+    path: "#courses",
   },
   {
     id: 4,
-    name: "Courses",
-    path: "/courses",
+    name: "Gallery",
+    path: "#gallery",
   },
   {
     id: 5,
-    name: "Gallery",
-    path: "/gallery",
+    name: "Blogs",
+    path: "#blog",
   },
   {
     id: 6,
     name: "Contact",
-    path: "/contact",
+    path: "#contact",
   },
 ];

@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+  --font-display: "Satoshi", "sans-serif";
+  --font-secondary: "Montserrat", "sans-serif";
+  --font-title: "Exo", "sans-serif";
+  --color-primary: #54b685;
+  --color-secondary: #425dac;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 @keyframes slowBounce {
   0% {
@@ -22,12 +37,12 @@
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg); 
+    transform: rotate(360deg);
   }
 }
 
 .rotated {
-  animation: slowrotate 10s linear infinite; 
+  animation: slowrotate 10s linear infinite;
 }
 
 @keyframes shake {
@@ -44,4 +59,18 @@
 
 .shake {
   animation: shake 2s ease-in-out infinite;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #54b685 !important;
+  font-size: 12px !important;
+  background-color: #425dac !important;
+  /* border-radius: 50px !important; */
+  width: 30px !important;
+  height: 30px !important;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 12px !important;
 }
