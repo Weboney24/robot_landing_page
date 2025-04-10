@@ -32,19 +32,19 @@ const Footer = () => {
   ];
 
   const quick_links = [
-    { id: "1", name: "About Us", link: "#" },
-    { id: "2", name: "Services", link: "#" },
-    { id: "3", name: "Case Studies", link: "#" },
-    { id: "4", name: "Contact", link: "#" },
-    { id: "5", name: "Blog", link: "#" },
+    { id: "1", name: "About Us", link: "#about" },
+    { id: "2", name: "Coruses", link: "#courses" },
+    { id: "3", name: "Gallery", link: "#gallery" },
+    { id: "4", name: "Blog", link: "#blog" },
+    { id: "5", name: "Contact", link: "#contact" },
   ];
 
   const solutions = [
-    { id: "1", name: "AI Data Visualization" },
-    { id: "2", name: "AI Image Processing" },
+    { id: "1", name: "Robotic Automation" },
+    { id: "2", name: "AI For Conversation" },
     { id: "3", name: "Machine Learning" },
     { id: "4", name: "Robot Automation Tech" },
-    { id: "5", name: "Language Processing" },
+    { id: "5", name: "Cyber Security" },
   ];
 
   return (
@@ -53,7 +53,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 text-center md:text-left border-b border-white pb-4">
           {icons_footer.map((item) => (
             <div key={item.id} className="flex flex-col md:flex-row items-center gap-2 md:p-4 p-3 rounded-lg   transition duration-200">
-              <div className="p-4 rounded-lg border border-[#425DAC] text-[#425DAC] flex justify-center items-center">{item.icons}</div>
+              <div className="p-4 rounded-lg border border-[#40434c] text-[#425DAC] flex justify-center items-center">{item.icons}</div>
               <div>
                 <p className="text-sm text-gray-300">{item.title}</p>
                 <p className="font-semibold text-sm text-[#425DAC]">{item.content}</p>
@@ -75,29 +75,29 @@ const Footer = () => {
 
           <div>
             <h2 className="text-[#425DAC] text-lg font-semibold mb-3">Quick Links</h2>
-            <ul className="space-y-2 text-white font-semibold">
+            <ul className="space-y-2 text-white font-semibold cursor-pointer">
               {quick_links.map((item) => (
                 <li key={item.id}>
-                  <Link to={item.link} className="hover:text-[#425DAC]">
+                  <a href={item.link} className="hover:text-secondary">
                     {item.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
           </div>
 
           <div>
-            <h2 className="text-[#425DAC] text-lg font-semibold mb-3">AI Solutions</h2>
+            <h2 className="text-[#425DAC] text-lg font-semibold mb-3">Courses</h2>
             <ul className="space-y-2 text-white font-semibold">
               {solutions.map((item) => (
-                <li key={item.id} className="hover:text-[#425DAC]">
+                <li key={item.id} className="hover:text-[#425DAC] cursor-pointer">
                   {item.name}
                 </li>
               ))}
             </ul>
           </div>
 
-          <div>
+          <div className="cursor-pointer">
             <h2 className="text-[#425DAC] text-lg font-semibold mb-3">Contact Us</h2>
             <p className="text-white flex items-center gap-2">
               <ICON_HELPER.LOCATION_ICON className="w-5 h-5 text-[#425DAC] font-semibold" />

@@ -31,22 +31,22 @@ const Courses = () => {
       description: "Protect systems and data using AI-driven methods.",
     },
     {
-      title: "Robotic Automation",
+      title: "Robotics Applications",
       img: "https://img.freepik.com/free-photo/child-making-robot_23-2148863368.jpg?t=st=1744175258~exp=1744178858~hmac=ef344e95675b13a07d2470c039a3a49968fce761c8a176a40178936d555ac8a4&w=740",
       description: "Learn automation with cutting-edge robotics.",
     },
     {
-      title: "AI For Conversation",
+      title: "Robot Automation Tech",
       img: "https://img.freepik.com/free-photo/technology-concept-with-futuristic-element_23-2151910957.jpg?t=st=1744175415~exp=1744179015~hmac=0702663c58d27d310a7704e39ce41f5aed89ffbd8d1d51909cbcbda5c97eb9d7&w=740",
       description: "Design smart chatbots and virtual assistants.",
     },
     {
-      title: "Machine Learning",
+      title: "Mechatronics",
       img: "https://img.freepik.com/free-photo/view-robot-tending-maintaining-gardens_23-2151803975.jpg?t=st=1744175464~exp=1744179064~hmac=ce369637ec6f496b320502f1c88e68d7af96f636878d15e293b3118126dae7aa&w=740",
       description: "Explore supervised and unsupervised ML models.",
     },
     {
-      title: "Cyber Security",
+      title: "Data Science",
       img: "https://img.freepik.com/free-photo/scene-with-futuristic-robot-used-construction-industry_23-2151329453.jpg?t=st=1744175513~exp=1744179113~hmac=85c5e970557fc7e647d31b02e20a660bd9f2124964d9bcc2bcc19da18311b67e&w=740",
       description: "Protect systems and data using AI-driven methods.Protect systems and data using AI-driven methods.Protect systems and data using AI-driven methods.",
     },
