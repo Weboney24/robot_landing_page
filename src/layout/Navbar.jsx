@@ -33,7 +33,10 @@ const Navbar = () => {
       </div>
 
       <div className="hidden lg:block">
-        <button className="bg-[#54B685] text-white font-semibold rounded py-2 px-4">Get Started!</button>
+        <a href="#contact">
+          {" "}
+          <button className="bg-[#54B685] text-white font-semibold rounded py-2 px-4">Get Started!</button>
+        </a>
       </div>
 
       <div className="lg:hidden flex items-center">

@@ -5,10 +5,33 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay } from "swiper/modules";
 import { Image_Helper } from "../../helper/imageHelper";
+import { ICON_HELPER } from "../../helper/iconHelper";
 
 const Hero = () => {
+  // Sample data (replace this with API response)
+  const cardData = [
+    {
+      id: 1,
+      icon: <ICON_HELPER.ROBOT_ICON />,
+      title: "Robotics",
+      description: "Explore the world of intelligent machines through hands-on robotics training",
+    },
+    {
+      id: 2,
+      icon: <ICON_HELPER.BRAIN_ICON />,
+      title: " Coding",
+      description: "Build the future with code! Learn programming fundamentals ",
+    },
+    {
+      id: 3,
+      icon: <ICON_HELPER.ANALAYS_ICON />,
+      title: " Software Technologies",
+      description: "Master modern software tools and technologies used in AI",
+    },
+  ];
+
   return (
-    <div className="w-full h-screen bg-[#425DAC] relative">
+    <div className="w-full h-screen bg-[#33467f] relative">
       <div
         className="absolute w-1/2 h-full bg-center bg-cover bg-no-repeat"
         style={{
@@ -39,11 +62,13 @@ const Hero = () => {
             <div className="w-full h-screen px-[8vw] py-10 flex items-center">
               <div className="w-full min-h-[500px] flex flex-col lg:flex-row items-center justify-between gap-10">
                 <div className="w-full lg:w-[50%] h-full flex flex-col items-start gap-y-10">
-                  <h1 className="text-white text-6xl font-bold capitalize">We Transform the Digital Landscape with AI Products</h1>
-                  <p className="text-white text-xl font-bold">A diam sit vulputate eget ultricies magna. Velit augue quisque eget etddt tincidunt aenean ullamcorper convallis.</p>
+                  <h1 className="text-white md:text-6xl text-xl font-bold capitalize">We Transform the Digital Landscape with AI Products</h1>
+                  <p className="text-white text-xl font-bold"> Dive into the exciting world of AI-powered robotics, where creativity meets cutting-edge technology. These courses are crafted to give you practical skills in building smart robots that think, sense, and move on their own</p>
 
                   <div className="flex flex-col md:flex-row items-center gap-10">
-                    <button className="font-bold text-xl px-6 py-3 rounded bg-orange-500 text-white">Get Started!</button>
+                    <a href="#contact">
+                      <button className="font-bold text-xl px-6 py-3 rounded bg-primary text-white">Get Started!</button>
+                    </a>{" "}
                     <button className="font-bold text-xl px-6 py-3 rounded bg-blue-500 text-white">Try Demo!</button>
                   </div>
                 </div>
@@ -55,7 +80,7 @@ const Hero = () => {
                   <div className="absolute top-0 left-0">
                     <img src={Image_Helper.minibanner2} alt="Mini Banner 2" className="w-[70px] h-[70px] shake" />
                   </div>
-                  <img src={Image_Helper.newrobo1} alt="Robot" className="w-[500px] h-auto bounce" />
+                  <img src={Image_Helper.newrobo1} alt="Robot" className="w-[500px] h-auto bounce md:block hidden" />
                   <div className="absolute bottom-0 right-0">
                     <img src={Image_Helper.minibanner2} alt="Mini Banner 3" className="w-[70px] h-[70px] rotate-180 shake" />
                   </div>
@@ -71,11 +96,13 @@ const Hero = () => {
                   <div className="absolute -top-20 -right-36">
                     <img src={Image_Helper.minibanner4} alt="Mini Banner 1" className="w-[80px] h-auto animate-pulse" />
                   </div>
-                  <h1 className="text-white text-6xl font-bold capitalize">Revolutionize Web Experience with AI Products</h1>
-                  <p className="text-white text-xl font-bold">A diam sit vulputate eget ultricies magna. Velit augue quisque eget etddt tincidunt aenean ullamcorper convallis.</p>
+                  <h1 className="text-white md:text-6xl text-xl font-bold capitalize">Revolutionize Web Experience with AI Products</h1>
+                  <p className="text-white text-xl font-bold">These courses are tailored to help you design, develop, and control intelligent robotic systems that can perceive, learn, and adapt in real-world environments.</p>
 
                   <div className="flex flex-col md:flex-row items-center gap-10">
-                    <button className="font-bold text-xl px-6 py-3 rounded bg-orange-500 text-white">Get Started!</button>
+                    <a href="#contact">
+                      <button className="font-bold text-xl px-6 py-3 rounded bg-primary text-white">Get Started!</button>
+                    </a>{" "}
                     <button className="font-bold text-xl px-6 py-3 rounded bg-blue-500 text-white">Try Demo!</button>
                   </div>
 
@@ -88,7 +115,7 @@ const Hero = () => {
                   <div className="absolute top-0 right-0">
                     <img src={Image_Helper.minibanner1} alt="Mini Banner 1" className="w-[70px] h-[70px]" />
                   </div>
-                  <img src={Image_Helper.robo2} alt="Robot 2" className="w-[300px] h-auto bounce" />
+                  <img src={Image_Helper.robo2} alt="Robot 2" className="w-[300px] h-auto bounce md:block hidden" />
                   <div className="absolute bottom-0 right-0">
                     <img src={Image_Helper.minibanner2} alt="Mini Banner 3" className="w-[70px] h-[70px]" />
                   </div>
@@ -97,6 +124,19 @@ const Hero = () => {
             </div>
           </SwiperSlide>
         </Swiper>
+      </div>
+      <div className="w-full md:flex hidden justify-center -mt-20 relative z-20  ">
+        <div className="w-[90%] max-w-7xl grid grid-cols-1 sm:grid-cols-3 gap-6">
+          {cardData.map((res, index) => (
+            <div key={index} className="bg-gray-50 p-6 flex items-center gap-4">
+              <h1 className="text-5xl text-primary">{res.icon}</h1>
+              <div>
+                <h3 className="text-lg font-bold text-gray-800">{res.title}</h3>
+                <p className="text-sm text-gray-600 mt-2">{res.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
