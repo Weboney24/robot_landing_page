@@ -27,7 +27,7 @@ const About = () => {
               <strong>Robot PK Innovation</strong> is a dynamic training and innovation center, driven by the vision of <em>“Powering Innovation with Nature.”</em> The name PK stands for Power and Knowledge — two pillars that shape our mission to inspire and prepare the next generation of Young Scientists and Technologists.
             </p>
             <p className="text-gray-700 mb-4">With over 20 years of experience in the training industry, we are recognized for our expertise in CAD training and hands-on technology education.While CAD continues to be one of our core strengths, Robot PK Innovation is an independent center dedicated to equipping learners with the skills and mindset needed for tomorrow’s tech-driven world.</p>
-            {/* <p className="text-gray-700 mb-6"> We offer specialized STEM-based programs in Artificial Intelligence, Robotics, Coding, and Software Technologies, blending real-world relevance with creative exploration.</p> */}
+            <p className="text-gray-700 mb-6"> We offer specialized STEM-based programs in Artificial Intelligence, Robotics, Coding, and Software Technologies, blending real-world relevance with creative exploration.</p>
             {/* <div className="flex flex-col gap-3 mb-6">
               {["Learn from top industry experts", "Build practical AI and ML solutions", "Master cutting-edge tools and technologies"].map((point, idx) => (
                 <div key={idx} className="flex items-center text-gray-800">
