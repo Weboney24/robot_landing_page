@@ -33,7 +33,7 @@ const Gallery = () => {
       <div className="bg-white py-10 px-[8vw] pt-10">
         <div className="text-center">
           <h2 className="text-3xl font-bold mt-2 font-title text-[#425DAC] inline-block relative pb-2">
-            Trending Gallery
+            Gallery
             <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-[80%]  h-[3px] bg-[#425DAC] rounded-full"></span>
           </h2>
         </div>

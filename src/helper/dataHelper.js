@@ -20,11 +20,11 @@ export const NavMenu = [
     name: "Gallery",
     path: "#gallery",
   },
-  {
-    id: 5,
-    name: "Blogs",
-    path: "#blog",
-  },
+  // {
+  //   id: 5,
+  //   name: "Blogs",
+  //   path: "#blog",
+  // },
   {
     id: 6,
     name: "Contact",
