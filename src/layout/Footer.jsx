@@ -9,13 +9,13 @@ const Footer = () => {
       id: "1",
       icons: <ICON_HELPER.PHONE_ICON className=" w-6 h-6" />,
       title: "Contact",
-      content: "(950) 222 8687",
+      content: "78712-04001",
     },
     {
       id: "2",
       icons: <ICON_HELPER.MAIL_ICON className=" w-6 h-6" />,
       title: "Email Address",
-      content: "intelyt@domain.com",
+      content: "vpkumar2209@gmail.com",
     },
     {
       id: "3",
@@ -27,7 +27,7 @@ const Footer = () => {
       id: "4",
       icons: <ICON_HELPER.LOCATION_ICON className=" w-6 h-6" />,
       title: "Our Location",
-      content: "38 South Street, NY",
+      content: "2nd Floor ,Ashoka Tower ,opp to Ajantha Theatre Nearest CADD CENTERE ,KARUR",
     },
   ];
 
@@ -100,12 +100,12 @@ const Footer = () => {
           <div className="cursor-pointer">
             <h2 className="text-primary text-lg font-semibold mb-3">Contact Us</h2>
             <p className="text-white flex items-center gap-2">
-              <ICON_HELPER.LOCATION_ICON className="w-5 h-5 text-primary font-semibold" />
-              100/1 Example, NY - 00000
+              <ICON_HELPER.LOCATION_ICON className="w-8 h-8 text-primary font-semibold" />
+              2nd Floor ,Ashoka Tower ,opp to Ajantha Theatre Nearest CADD CENTERE ,KARUR
             </p>
             <p className="text-white flex items-center gap-2 mt-2">
               <ICON_HELPER.PHONE_ICON className="w-5 h-5 text-primary font-semibold" />
-              (950) 222 8687
+              78712-04001
             </p>
           </div>
         </div>
