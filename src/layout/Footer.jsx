@@ -21,13 +21,13 @@ const Footer = () => {
       id: "3",
       icons: <ICON_HELPER.TIME_ICON className=" w-6 h-6" />,
       title: "Office Timing",
-      content: "9:00AM to 8:00PM (Mon - Friday)",
+      content: "10:00AM to 7:00PM (Mon - sun)",
     },
     {
       id: "4",
       icons: <ICON_HELPER.LOCATION_ICON className=" w-6 h-6" />,
       title: "Our Location",
-      content: "2nd Floor ,Ashoka Tower ,opp to Ajantha Theatre Nearest CADD CENTERE ,KARUR",
+      content: "2nd Floor ,Ashoka Tower ,opp to Ajantha Theatre,Karur",
     },
   ];
 
@@ -43,8 +43,6 @@ const Footer = () => {
     { id: "1", name: "Robotic Automation" },
     { id: "2", name: "AI For Conversation" },
     { id: "3", name: "Machine Learning" },
-    { id: "4", name: "Robot Automation Tech" },
-    { id: "5", name: "Cyber Security" },
   ];
 
   return (
@@ -101,7 +99,7 @@ const Footer = () => {
             <h2 className="text-primary text-lg font-semibold mb-3">Contact Us</h2>
             <p className="text-white flex items-center gap-2">
               <ICON_HELPER.LOCATION_ICON className="w-8 h-8 text-primary font-semibold" />
-              2nd Floor ,Ashoka Tower ,opp to Ajantha Theatre Nearest CADD CENTERE ,KARUR
+              2nd Floor ,Ashoka Tower ,opp to Ajantha Theatre ,Karur
             </p>
             <p className="text-white flex items-center gap-2 mt-2">
               <ICON_HELPER.PHONE_ICON className="w-5 h-5 text-primary font-semibold" />
