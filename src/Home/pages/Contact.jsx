@@ -42,7 +42,7 @@ const Contact = () => {
                 className="space-y-2"
                 onFinish={(values) => {
                   const message = `Hi, I'm ${values.name},\nGrade: ${values.grade}\nSchool: ${values.school}\nMobile: ${values.mobile}\nEmail: ${values.email}\nSubject: ${values.subject}\n\n${values.message}`;
-                  const url = `https://wa.me/919789583097?text=${encodeURIComponent(message)}`;
+                  const url = `https://wa.me/917871204001?text=${encodeURIComponent(message)}`;
                   window.open(url, "_blank");
                 }}
               >

@@ -60,7 +60,7 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 py-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-4 py-6  ">
           <div className="md:flex-col flex space-y-5">
             <img src={Image_Helper.FOOTER_LOGO} alt="Logo" className="w-[200px]  h-20 mb-3 bg-white" />
             <p className="text-white text-sm w-60 font-semibold md:block hidden">We’re passionate about empowering minds through robotics and AI. From beginner to advanced, our courses and communities help you grow.</p>
