@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <div className="pb-10  pt-10 ">
-        <div className="px-[8vw]  grid grid-cols-1 md:grid-cols-2    items-center bg-[#425DAC] md:min-h-screen" style={{ backgroundImage: "url('https://html.tonatheme.com/2024/intelytech/images/background/banner-01.png')" }}>
+        <div className="px-[8vw]  grid grid-cols-1 md:grid-cols-2    items-center bg-[#33467f] md:min-h-screen" style={{ backgroundImage: "url('https://html.tonatheme.com/2024/intelytech/images/background/banner-01.png')" }}>
           <div className="space-y-6 mt-14">
             <h1 className="md:text-4xl font-bold text-white  font-secondary">We offer end-to-end robotics education solutions</h1>
             <p className="md:text-lg text-gray-300 font-secondary">Learn the foundations of robotics, from mechanical design to intelligent control systems, all in one streamlined program.</p>
