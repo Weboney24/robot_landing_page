@@ -25,9 +25,14 @@ const Footer = () => {
     },
     {
       id: "4",
-      icons: <ICON_HELPER.LOCATION_ICON className=" w-6 h-6" />,
+      icons: <ICON_HELPER.LOCATION_ICON className="w-6 h-6" />,
       title: "Our Location",
-      content: "2nd Floor ,Ashoka Tower ,opp to Ajantha Theatre,Karur",
+      content: (
+        <>
+          2nd Floor, Ashoka Tower <br />
+          Opp to Ajantha Theatre, Karur
+        </>
+      ),
     },
   ];
 
@@ -98,8 +103,9 @@ const Footer = () => {
           <div className="cursor-pointer">
             <h2 className="text-primary text-lg font-semibold mb-3">Contact Us</h2>
             <p className="text-white flex items-center gap-2">
-              <ICON_HELPER.LOCATION_ICON className="w-8 h-8 text-primary font-semibold" />
-              2nd Floor ,Ashoka Tower ,opp to Ajantha Theatre ,Karur
+              <ICON_HELPER.LOCATION_ICON className="w-6 h-6 text-primary font-semibold" />
+              2nd Floor ,Ashoka Tower <br />
+              opp to Ajantha Theatre ,Karur
             </p>
             <p className="text-white flex items-center gap-2 mt-2">
               <ICON_HELPER.PHONE_ICON className="w-5 h-5 text-primary font-semibold" />

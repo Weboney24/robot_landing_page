@@ -33,7 +33,6 @@ const Contact = () => {
 
           <div className="bg-white  md:mt-[100px] py-5 px-[50px]  shadow-md max-w-[500px] mx-auto">
             <div className="space-y-2 mb-4">
-              <p className="text-blue-600 text-xs font-medium">Blandit Vitae Sit Ut Eu Nullam Odio Ipsum</p>
               <h2 className="md:text-lg font-semibold">Get a Free and Instant Consultation</h2>
             </div>
             <div>
@@ -51,30 +50,27 @@ const Contact = () => {
                   <Form.Item label={<span className="text-sm font-medium">Enter Name</span>} className="mb-0" name="name" rules={[{ required: true, message: "Please enter your name" }]}>
                     <Input placeholder="Enter your name" className="h-[36px] text-sm" />
                   </Form.Item>
-                  <Form.Item label={<span className="text-sm font-medium">Enter Email</span>} className="mb-0" name="email" rules={[{ required: true, message: "Please enter your email" }]}>
-                    <Input placeholder="Enter your email" className="h-[36px] text-sm" />
-                  </Form.Item>
-                </div>
 
-                {/* Mobile and Grade */}
-                <div className="grid md:grid-cols-2 grid-cols-1 gap-3">
-                  <Form.Item label={<span className="text-sm font-medium">Mobile Number</span>} className="mb-0" name="mobile" rules={[{ required: true, message: "Please enter your mobile number" }]}>
-                    <Input placeholder="Enter your mobile number" className="h-[36px] text-sm" />
-                  </Form.Item>
                   <Form.Item label={<span className="text-sm font-medium">Grade</span>} className="mb-0" name="grade" rules={[{ required: true, message: "Please enter your grade" }]}>
                     <Input placeholder="Enter your grade" className="h-[36px] text-sm" />
                   </Form.Item>
                 </div>
 
-                {/* School Name */}
+                {/* Mobile and Grade */}
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-3">
-                  <Form.Item label={<span className="text-sm font-medium">School Name</span>} className="mb-0" name="school" rules={[{ required: true, message: "Please enter your school name" }]}>
+                  <Form.Item label={<span className="text-sm font-medium">School or Colloge Name</span>} className="mb-0" name="school" rules={[{ required: true, message: "Please enter your school name" }]}>
                     <Input placeholder="Enter your school name" className="h-[36px] text-sm" />
                   </Form.Item>
 
-                  {/* Subject */}
-                  <Form.Item label={<span className="text-sm font-medium">Subject</span>} className="mb-0" name="subject" rules={[{ required: true, message: "Please enter the subject" }]}>
-                    <Input placeholder="Select a subject" className="h-[36px] text-sm" />
+                  <Form.Item label={<span className="text-sm font-medium">Mobile Number</span>} className="mb-0" name="mobile" rules={[{ required: true, message: "Please enter your mobile number" }]}>
+                    <Input placeholder="Enter your mobile number" className="h-[36px] text-sm" />
+                  </Form.Item>
+                </div>
+
+                {/* School Name */}
+                <div className="grid md:grid-cols-2 grid-cols-1 gap-3">
+                  <Form.Item label={<span className="text-sm font-medium">Enter Email</span>} className="mb-0" name="email" rules={[{ required: true, message: "Please enter your email" }]}>
+                    <Input placeholder="Enter your email" className="h-[36px] text-sm" />
                   </Form.Item>
                 </div>
 
