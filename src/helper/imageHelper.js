@@ -9,6 +9,10 @@ import minibanner2 from "../assets/hero/kite.png";
 import minibanner3 from "../assets/hero/as-01.png";
 import minibanner4 from "../assets/hero/as-03.png";
 import newrobo1 from "../assets/hero/newrobo1.png";
+import core1 from "../assets/coruses/courses1.jpg";
+import core2 from "../assets/coruses/courses2.webp";
+import core3 from "../assets/coruses/courses3.jpg";
+import core4 from "../assets/coruses/courses4.jpeg";
 
 export const Image_Helper = {
   navlogo: navlogo,
@@ -23,4 +27,9 @@ export const Image_Helper = {
   minibanner3: minibanner3,
   minibanner4: minibanner4,
   newrobo1: newrobo1,
+
+  core1: core1,
+  core2: core2,
+  core3: core3,
+  core4: core4,
 };
