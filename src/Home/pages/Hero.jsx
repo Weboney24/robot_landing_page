@@ -62,7 +62,7 @@ const Hero = () => {
             <div className="w-full h-screen px-[8vw] py-10 flex items-center">
               <div className="w-full min-h-[500px] flex flex-col lg:flex-row items-center justify-between gap-10">
                 <div className="w-full lg:w-[50%] h-full flex flex-col items-start gap-y-10">
-                  <h1 className="text-white md:text-6xl text-xl font-bold capitalize">We Transform the Digital Landscape with AI Products</h1>
+                  <h1 className="text-white md:text-6xl text-xl font-bold capitalize">Empowering Minds with Robotics Education</h1>
                   <p className="text-white text-xl font-bold"> Dive into the exciting world of AI-powered robotics, where creativity meets cutting-edge technology. These courses are crafted to give you practical skills in building smart robots that think, sense, and move on their own</p>
 
                   <div className="flex flex-col md:flex-row items-center gap-10">
@@ -96,7 +96,7 @@ const Hero = () => {
                   <div className="absolute -top-20 -right-36">
                     <img src={Image_Helper.minibanner4} alt="Mini Banner 1" className="w-[80px] h-auto animate-pulse" />
                   </div>
-                  <h1 className="text-white md:text-6xl text-xl font-bold capitalize">Revolutionize Web Experience with AI Products</h1>
+                  <h1 className="text-white md:text-6xl text-xl font-bold capitalize">Revolutionize Learning with Robotics Courses</h1>
                   <p className="text-white text-xl font-bold">These courses are tailored to help you design, develop, and control intelligent robotic systems that can perceive, learn, and adapt in real-world environments.</p>
 
                   <div className="flex flex-col md:flex-row items-center gap-10">
