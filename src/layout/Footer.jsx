@@ -15,7 +15,7 @@ const Footer = () => {
       id: "2",
       icons: <ICON_HELPER.MAIL_ICON className=" w-6 h-6" />,
       title: "Email Address",
-      content: "vpkumar2209@gmail.com",
+      content: "admin@robotpkinnovation.com",
     },
     {
       id: "3",
@@ -53,7 +53,7 @@ const Footer = () => {
   return (
     <div>
       <div className="bg-secondary text-[#425DAC] py-6 px-[8vw] mt-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 text-center md:text-left border-b border-white pb-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center md:text-left border-b border-white pb-4">
           {icons_footer.map((item) => (
             <div key={item.id} className="flex flex-col md:flex-row items-center gap-2 md:p-4 p-3 rounded-lg   transition duration-200">
               <div className="p-4 rounded-lg border border-primary text-white flex justify-center items-center">{item.icons}</div>
@@ -65,7 +65,7 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 py-6  ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-6  ">
           <div className="md:flex-col flex space-y-5">
             <img src={Image_Helper.FOOTER_LOGO} alt="Logo" className="w-[200px]  h-20 mb-3 bg-white" />
             <p className="text-white text-sm w-60 font-semibold md:block hidden">We’re passionate about empowering minds through robotics and AI. From beginner to advanced, our courses and communities help you grow.</p>
